@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import SnapKit
 
-class TVListVC: UIViewController, TVListViewModelDelegate {
-    
+class TVListVC: UIViewController {
+    lazy var tableView: UITableView = {
+        let tableView = UITableView()
+        return tableView
+    }()
     
     var viewModel: TVListViewModelProtocol?
     var arrTv = [Result]()
@@ -16,7 +20,24 @@ class TVListVC: UIViewController, TVListViewModelDelegate {
         super.viewDidLoad()
         viewModel?.delegate = self
         viewModel!.load()
+        configure()
     }
+    func configure() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        view.addSubview(tableView)
+        Constraints()
+    }
+    func Constraints() {
+        tableView.snp.makeConstraints { make in
+            make.top.left.right.bottom.equalToSuperview()
+        }
+    }
+    
+
+
+}
+extension TVListVC: TVListViewModelDelegate {
     func handleOutPut(output: TvListViewModelOutPut) {
         switch output {
         case.tvlist(let tvList):
@@ -25,7 +46,13 @@ class TVListVC: UIViewController, TVListViewModelDelegate {
             print(error)
         }
     }
-
-
+}
+extension TVListVC: UITableViewDelegate,UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
 }
 

@@ -17,6 +17,7 @@
 		3DAABD0C29E5DC76000518C5 /* TvShowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD0B29E5DC76000518C5 /* TvShowModel.swift */; };
 		3DAABD0E29E5DE63000518C5 /* TVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD0D29E5DE63000518C5 /* TVListViewModel.swift */; };
 		3DAABD1029E5DE6E000518C5 /* TVListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD0F29E5DE6E000518C5 /* TVListBuilder.swift */; };
+		3DAABD1329E693AA000518C5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAABD1229E693AA000518C5 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAABD1329E693AA000518C5 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +153,9 @@
 			dependencies = (
 			);
 			name = TMDBApp;
+			packageProductDependencies = (
+				3DAABD1229E693AA000518C5 /* SnapKit */,
+			);
 			productName = TMDBApp;
 			productReference = 3DAABCE929E5D921000518C5 /* TMDBApp.app */;
 			productType = "com.apple.product-type.application";
@@ -179,6 +184,9 @@
 				Base,
 			);
 			mainGroup = 3DAABCE029E5D921000518C5;
+			packageReferences = (
+				3DAABD1129E693AA000518C5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3DAABCEA29E5D921000518C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -418,6 +426,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3DAABD1129E693AA000518C5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3DAABD1229E693AA000518C5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DAABD1129E693AA000518C5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3DAABCE129E5D921000518C5 /* Project object */;
 }
