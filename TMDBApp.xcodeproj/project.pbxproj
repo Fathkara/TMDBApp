@@ -18,6 +18,10 @@
 		3DAABD0E29E5DE63000518C5 /* TVListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD0D29E5DE63000518C5 /* TVListViewModel.swift */; };
 		3DAABD1029E5DE6E000518C5 /* TVListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD0F29E5DE6E000518C5 /* TVListBuilder.swift */; };
 		3DAABD1329E693AA000518C5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAABD1229E693AA000518C5 /* SnapKit */; };
+		3DAABD2329E7E1C9000518C5 /* TVListConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD2229E7E1C9000518C5 /* TVListConstant.swift */; };
+		3DAABD2729E7E248000518C5 /* TVListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD2629E7E248000518C5 /* TVListCell.swift */; };
+		3DAABD2A29E7E83E000518C5 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAABD2929E7E83E000518C5 /* AlamofireImage */; };
+		3DAABD2C29E7E892000518C5 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD2B29E7E892000518C5 /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,9 @@
 		3DAABD0B29E5DC76000518C5 /* TvShowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowModel.swift; sourceTree = "<group>"; };
 		3DAABD0D29E5DE63000518C5 /* TVListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListViewModel.swift; sourceTree = "<group>"; };
 		3DAABD0F29E5DE6E000518C5 /* TVListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListBuilder.swift; sourceTree = "<group>"; };
+		3DAABD2229E7E1C9000518C5 /* TVListConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListConstant.swift; sourceTree = "<group>"; };
+		3DAABD2629E7E248000518C5 /* TVListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListCell.swift; sourceTree = "<group>"; };
+		3DAABD2B29E7E892000518C5 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +48,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAABD1329E693AA000518C5 /* SnapKit in Frameworks */,
+				3DAABD2A29E7E83E000518C5 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				3DAABD0729E5DA3F000518C5 /* NetworkConstant.swift */,
+				3DAABD2229E7E1C9000518C5 /* TVListConstant.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -91,9 +100,7 @@
 		3DAABD0129E5D9DA000518C5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
-				3DAABCF029E5D921000518C5 /* TVListVC.swift */,
-				3DAABD0D29E5DE63000518C5 /* TVListViewModel.swift */,
-				3DAABD0F29E5DE6E000518C5 /* TVListBuilder.swift */,
+				3DAABD2429E7E20B000518C5 /* TVList */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -125,6 +132,7 @@
 		3DAABD0529E5DA0E000518C5 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				3DAABD2B29E7E892000518C5 /* CustomLabel.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -135,6 +143,25 @@
 				3DAABD0929E5DC0B000518C5 /* TVShowListService.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		3DAABD2429E7E20B000518C5 /* TVList */ = {
+			isa = PBXGroup;
+			children = (
+				3DAABD2529E7E219000518C5 /* Cell */,
+				3DAABCF029E5D921000518C5 /* TVListVC.swift */,
+				3DAABD0F29E5DE6E000518C5 /* TVListBuilder.swift */,
+				3DAABD0D29E5DE63000518C5 /* TVListViewModel.swift */,
+			);
+			path = TVList;
+			sourceTree = "<group>";
+		};
+		3DAABD2529E7E219000518C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3DAABD2629E7E248000518C5 /* TVListCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +182,7 @@
 			name = TMDBApp;
 			packageProductDependencies = (
 				3DAABD1229E693AA000518C5 /* SnapKit */,
+				3DAABD2929E7E83E000518C5 /* AlamofireImage */,
 			);
 			productName = TMDBApp;
 			productReference = 3DAABCE929E5D921000518C5 /* TMDBApp.app */;
@@ -186,6 +214,7 @@
 			mainGroup = 3DAABCE029E5D921000518C5;
 			packageReferences = (
 				3DAABD1129E693AA000518C5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				3DAABD2829E7E83E000518C5 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 3DAABCEA29E5D921000518C5 /* Products */;
 			projectDirPath = "";
@@ -215,12 +244,15 @@
 			files = (
 				3DAABD0C29E5DC76000518C5 /* TvShowModel.swift in Sources */,
 				3DAABD0829E5DA3F000518C5 /* NetworkConstant.swift in Sources */,
+				3DAABD2C29E7E892000518C5 /* CustomLabel.swift in Sources */,
 				3DAABD0E29E5DE63000518C5 /* TVListViewModel.swift in Sources */,
 				3DAABD1029E5DE6E000518C5 /* TVListBuilder.swift in Sources */,
+				3DAABD2329E7E1C9000518C5 /* TVListConstant.swift in Sources */,
 				3DAABD0A29E5DC0B000518C5 /* TVShowListService.swift in Sources */,
 				3DAABCF129E5D921000518C5 /* TVListVC.swift in Sources */,
 				3DAABCED29E5D921000518C5 /* AppDelegate.swift in Sources */,
 				3DAABCEF29E5D921000518C5 /* SceneDelegate.swift in Sources */,
+				3DAABD2729E7E248000518C5 /* TVListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +468,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		3DAABD2829E7E83E000518C5 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -443,6 +483,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3DAABD1129E693AA000518C5 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		3DAABD2929E7E83E000518C5 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3DAABD2829E7E83E000518C5 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

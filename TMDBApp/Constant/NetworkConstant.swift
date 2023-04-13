@@ -9,7 +9,7 @@ import Foundation
 class NetworkConstant {
     
     enum tvListAPI: String {
-        case pathUrl = "https://api.themoviedb.org/3/movie"
+        case pathUrl = "https://api.themoviedb.org/3/tv"
         case genreUrl = "/popular"
         case apiKey = "?api_key=7449b8e0901923de98300585d22d2be7"
         case languageUrl = "&language=en-US&page=1"

@@ -26,6 +26,7 @@ struct Result: Codable {
     let popularity: Double?
     let posterPath, releaseDate, title: String?
     let video: Bool?
+    let name:String?
     let voteAverage: Double?
     let voteCount: Int?
 
@@ -42,5 +43,6 @@ struct Result: Codable {
         case title, video
         case voteAverage = "vote_average"
         case voteCount = "vote_count"
+        case name = "name"
     }
 }
