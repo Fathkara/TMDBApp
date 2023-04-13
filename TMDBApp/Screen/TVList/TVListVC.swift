@@ -44,13 +44,9 @@ class TVListVC: UIViewController {
         searchBar.placeholder = TVListConstant.TVListUIConstant.placeHolder.rawValue
         searchBar.showsCancelButton = true
         tvListTableView.register(TVListCell.self, forCellReuseIdentifier: TVListCell.Identifier.path.rawValue)
-//        let rightButton = UIBarButtonItem(image: UIImage(systemName: "suit.heart.fill"), style: .done, target: self, action: #selector(rightButtonTapped))
-//        navigationItem.rightBarButtonItem = rightButton
+
     }
 
-//    @objc func rightButtonTapped(){
-//        self.show(MovieFavoriteBuilder.make(), sender: nil)
-//    }
     
     @objc func didTapBackButton(){
         dismiss(animated: true)
