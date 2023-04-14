@@ -102,15 +102,15 @@ extension TVListVC: UITableViewDelegate,UITableViewDataSource {
         }else{
            id = tvData[indexPath.row].id ?? 0
         }
-//        let vc = TVListDetailBuilder.make(id: id ?? 0)
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = TVListDetailBuilder.make(id: id ?? 0)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 extension TVListVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
         if searchBar.text != "" {
             isSearch = true
-            tvList = tvData.filter({($0.originalTitle!.lowercased().contains(searchText.lowercased()) )})
+            tvList = tvData.filter({($0.name!.lowercased().contains(searchText.lowercased()) )})
         }else{
             isSearch = false
         }

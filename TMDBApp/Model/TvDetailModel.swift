@@ -15,6 +15,7 @@ struct TvDetail: Codable {
     let genres: [Genre]?
     let homepage: String?
     let id: Int?
+    let name: String?
     let imdbID, originalLanguage, originalTitle, overview: String?
     let popularity: Double?
     let posterPath: String?
@@ -33,6 +34,7 @@ struct TvDetail: Codable {
         case releaseDate = "release_date"
         case revenue, runtime
         case status, tagline, title, video
+        case name = "name"
     }
 }
 

@@ -36,5 +36,245 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3AAC7ED8-8DBF-4A19-A730-0A846DEEBD23"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "saveUI(tvListData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3AAC7ED8-8DBF-4A19-A730-0A846DEEBD23 - dea391263fe3d8f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDBApp.TVListDetailVC.saveUI(movieData: TMDBApp.TvDetail) -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "1272">
+               </Location>
+               <Location
+                  uuid = "3AAC7ED8-8DBF-4A19-A730-0A846DEEBD23 - dea391263fe3d8f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDBApp.TVListDetailVC.saveUI(movieData: TMDBApp.TvDetail) -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "1264">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AEDA3716-336C-4CD0-A55F-7DD06E3584D2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "saveUI(tvListData:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AEDA3716-336C-4CD0-A55F-7DD06E3584D2 - dea391263fe3d87a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDBApp.TVListDetailVC.saveUI(movieData: TMDBApp.TvDetail) -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "2848">
+               </Location>
+               <Location
+                  uuid = "AEDA3716-336C-4CD0-A55F-7DD06E3584D2 - dea391263fe3d87a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TMDBApp.TVListDetailVC.saveUI(movieData: TMDBApp.TvDetail) -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "2372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30849848-9991-4E91-9835-630EEFBAE08F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06241451-2714-42F0-8B73-858BA8C1F3B6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "loadtvShowDetail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "06241451-2714-42F0-8B73-858BA8C1F3B6 - 4fc4f78f2672dd41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TMDBApp.TvDetail) -&gt; () in TMDBApp.TvDetailViewModel.loadMovieDetail() -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "576">
+               </Location>
+               <Location
+                  uuid = "06241451-2714-42F0-8B73-858BA8C1F3B6 - 4fc4f78f2672dd41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TMDBApp.TvDetail) -&gt; () in TMDBApp.TvDetailViewModel.loadMovieDetail() -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "608">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7EF99185-0A44-4588-A95F-04EC822D3D85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadtvShowDetail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7EF99185-0A44-4588-A95F-04EC822D3D85 - f129dcefc108be00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.String) -&gt; () in TMDBApp.TvDetailViewModel.loadMovieDetail() -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "484">
+               </Location>
+               <Location
+                  uuid = "7EF99185-0A44-4588-A95F-04EC822D3D85 - f129dcefc108be00"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.String) -&gt; () in TMDBApp.TvDetailViewModel.loadMovieDetail() -&gt; ()"
+                  moduleName = "TMDBApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fatih/TMDBApp/TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "500">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B29C23E4-2876-4023-90B5-5131BFC61013"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadtvShowDetail()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE50A4FC-5719-4E9F-9A03-D4C4DC43D77B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TMDBApp/Screen/TVListDetail/TVListDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "addCoreData(data:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

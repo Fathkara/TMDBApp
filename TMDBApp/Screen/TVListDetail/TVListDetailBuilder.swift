@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class MovieDetailBuilder {
+class TVListDetailBuilder {
     static func make(id: Int) -> TVListDetailVC {
         let vc = TVListDetailVC()
         let viewModel = TvDetailViewModel(service: TvListDetailService(), id: id, coreDataMenager: CoreDataManager())

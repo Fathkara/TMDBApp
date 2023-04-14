@@ -9,12 +9,12 @@ import Foundation
 
 protocol TvDetailViewModelProtocol {
     var delegate: MovieDetailViewModelDelegate? {get set}
-    func loadMovieDetail()
+    func loadtvShowDetail()
     func addCoreData(data: TvDetail)
 }
 
 enum TvDetailOutPut {
-    case movieDetailData(data: TvDetail)
+    case tvShowDetailData(data: TvDetail)
     case showError(data: String)
 }
 
@@ -35,9 +35,9 @@ class TvDetailViewModel: TvDetailViewModelProtocol {
 }
 
 extension TvDetailViewModel {
-    func loadMovieDetail() {
+    func loadtvShowDetail() {
         service.fetchTvShowDetail(id: id!) { [delegate] tvshow in
-            delegate?.handleOutput(output: .movieDetailData(data: tvshow))
+            delegate?.handleOutput(output: .tvShowDetailData(data: tvshow))
         } onFailure: { [delegate] error in
             delegate?.handleOutput(output: .showError(data: error))
         }
