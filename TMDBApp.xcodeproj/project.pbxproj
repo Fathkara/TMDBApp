@@ -22,6 +22,14 @@
 		3DAABD2729E7E248000518C5 /* TVListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD2629E7E248000518C5 /* TVListCell.swift */; };
 		3DAABD2A29E7E83E000518C5 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3DAABD2929E7E83E000518C5 /* AlamofireImage */; };
 		3DAABD2C29E7E892000518C5 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD2B29E7E892000518C5 /* CustomLabel.swift */; };
+		3DAABD4629E99300000518C5 /* TVListDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD4529E99300000518C5 /* TVListDetailVC.swift */; };
+		3DAABD4829E99322000518C5 /* TVListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD4729E99322000518C5 /* TVListDetailViewModel.swift */; };
+		3DAABD4A29E99332000518C5 /* TVListDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD4929E99332000518C5 /* TVListDetailBuilder.swift */; };
+		3DAABD4C29E997ED000518C5 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD4B29E997ED000518C5 /* CoreDataManager.swift */; };
+		3DAABD4F29E99848000518C5 /* MovieDetailConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD4E29E99848000518C5 /* MovieDetailConstant.swift */; };
+		3DAABD5129E998E1000518C5 /* TvShowDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD5029E998E0000518C5 /* TvShowDetailService.swift */; };
+		3DAABD5329E99A5B000518C5 /* TvDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD5229E99A5B000518C5 /* TvDetailModel.swift */; };
+		3DAABD5629E99CB7000518C5 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3DAABD5429E99CB7000518C5 /* CoreData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,14 @@
 		3DAABD2229E7E1C9000518C5 /* TVListConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListConstant.swift; sourceTree = "<group>"; };
 		3DAABD2629E7E248000518C5 /* TVListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListCell.swift; sourceTree = "<group>"; };
 		3DAABD2B29E7E892000518C5 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		3DAABD4529E99300000518C5 /* TVListDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListDetailVC.swift; sourceTree = "<group>"; };
+		3DAABD4729E99322000518C5 /* TVListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListDetailViewModel.swift; sourceTree = "<group>"; };
+		3DAABD4929E99332000518C5 /* TVListDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVListDetailBuilder.swift; sourceTree = "<group>"; };
+		3DAABD4B29E997ED000518C5 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3DAABD4E29E99848000518C5 /* MovieDetailConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailConstant.swift; sourceTree = "<group>"; };
+		3DAABD5029E998E0000518C5 /* TvShowDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvShowDetailService.swift; sourceTree = "<group>"; };
+		3DAABD5229E99A5B000518C5 /* TvDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TvDetailModel.swift; sourceTree = "<group>"; };
+		3DAABD5529E99CB7000518C5 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +100,7 @@
 				3DAABCF529E5D923000518C5 /* Assets.xcassets */,
 				3DAABCF729E5D923000518C5 /* LaunchScreen.storyboard */,
 				3DAABCFA29E5D923000518C5 /* Info.plist */,
+				3DAABD5429E99CB7000518C5 /* CoreData.xcdatamodeld */,
 			);
 			path = TMDBApp;
 			sourceTree = "<group>";
@@ -91,6 +108,7 @@
 		3DAABD0029E5D9CE000518C5 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				3DAABD4D29E99839000518C5 /* MovieDetail */,
 				3DAABD0729E5DA3F000518C5 /* NetworkConstant.swift */,
 				3DAABD2229E7E1C9000518C5 /* TVListConstant.swift */,
 			);
@@ -100,6 +118,7 @@
 		3DAABD0129E5D9DA000518C5 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				3DAABD4429E992E7000518C5 /* TVListDetail */,
 				3DAABD2429E7E20B000518C5 /* TVList */,
 			);
 			path = Screen;
@@ -109,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				3DAABD0B29E5DC76000518C5 /* TvShowModel.swift */,
+				3DAABD5229E99A5B000518C5 /* TvDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,6 +136,7 @@
 		3DAABD0329E5D9EB000518C5 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				3DAABD4B29E997ED000518C5 /* CoreDataManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -141,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				3DAABD0929E5DC0B000518C5 /* TVShowListService.swift */,
+				3DAABD5029E998E0000518C5 /* TvShowDetailService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -162,6 +184,24 @@
 				3DAABD2629E7E248000518C5 /* TVListCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3DAABD4429E992E7000518C5 /* TVListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3DAABD4529E99300000518C5 /* TVListDetailVC.swift */,
+				3DAABD4729E99322000518C5 /* TVListDetailViewModel.swift */,
+				3DAABD4929E99332000518C5 /* TVListDetailBuilder.swift */,
+			);
+			path = TVListDetail;
+			sourceTree = "<group>";
+		};
+		3DAABD4D29E99839000518C5 /* MovieDetail */ = {
+			isa = PBXGroup;
+			children = (
+				3DAABD4E29E99848000518C5 /* MovieDetailConstant.swift */,
+			);
+			path = MovieDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,16 +282,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DAABD5329E99A5B000518C5 /* TvDetailModel.swift in Sources */,
 				3DAABD0C29E5DC76000518C5 /* TvShowModel.swift in Sources */,
 				3DAABD0829E5DA3F000518C5 /* NetworkConstant.swift in Sources */,
 				3DAABD2C29E7E892000518C5 /* CustomLabel.swift in Sources */,
+				3DAABD4C29E997ED000518C5 /* CoreDataManager.swift in Sources */,
 				3DAABD0E29E5DE63000518C5 /* TVListViewModel.swift in Sources */,
 				3DAABD1029E5DE6E000518C5 /* TVListBuilder.swift in Sources */,
+				3DAABD4629E99300000518C5 /* TVListDetailVC.swift in Sources */,
 				3DAABD2329E7E1C9000518C5 /* TVListConstant.swift in Sources */,
+				3DAABD4829E99322000518C5 /* TVListDetailViewModel.swift in Sources */,
 				3DAABD0A29E5DC0B000518C5 /* TVShowListService.swift in Sources */,
 				3DAABCF129E5D921000518C5 /* TVListVC.swift in Sources */,
 				3DAABCED29E5D921000518C5 /* AppDelegate.swift in Sources */,
+				3DAABD5629E99CB7000518C5 /* CoreData.xcdatamodeld in Sources */,
+				3DAABD4F29E99848000518C5 /* MovieDetailConstant.swift in Sources */,
 				3DAABCEF29E5D921000518C5 /* SceneDelegate.swift in Sources */,
+				3DAABD4A29E99332000518C5 /* TVListDetailBuilder.swift in Sources */,
+				3DAABD5129E998E1000518C5 /* TvShowDetailService.swift in Sources */,
 				3DAABD2729E7E248000518C5 /* TVListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +538,19 @@
 			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		3DAABD5429E99CB7000518C5 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3DAABD5529E99CB7000518C5 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 3DAABD5529E99CB7000518C5 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3DAABCE129E5D921000518C5 /* Project object */;
 }
