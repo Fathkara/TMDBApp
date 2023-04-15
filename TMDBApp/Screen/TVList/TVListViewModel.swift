@@ -20,13 +20,17 @@ protocol TVListViewModelDelegate {
 class TVListViewModel:TVListViewModelProtocol {
     var delegate: TVListViewModelDelegate?
     var service: TvListServiceProtocol?
+    private var tvList: [Result] = []
+    private var page : Int = 1
     init(service: TvListServiceProtocol? = nil) {
         self.service = service
     }
     
     func load() {
-        service?.fetchTvShow(onSuccess: { [delegate] tv in
-            delegate?.handleOutPut(output: .tvlist(tv))
+        service?.fetchTvShow(page: page, onSuccess: { [delegate] tv in
+            self.tvList.append(contentsOf: tv)
+            delegate?.handleOutPut(output: .tvlist(self.tvList))
+            self.page += 1
         }, onFailure: { [delegate] error in
             delegate?.handleOutPut(output: .error(error))
         })

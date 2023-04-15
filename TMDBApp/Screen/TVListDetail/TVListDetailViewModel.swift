@@ -45,6 +45,6 @@ extension TvDetailViewModel {
     }
     
     func addCoreData(data: TvDetail) {
-        coreDataMenager?.addMovie(value: data)
+        coreDataMenager?.addTvList(value: data)
     }
 }

@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 class TVListVC: UIViewController {
+    //MARK: UI
     
     lazy var tvListTableView: UITableView = {
         let tableView = UITableView()
@@ -18,19 +19,24 @@ class TVListVC: UIViewController {
        let searchBar = UISearchBar()
         return searchBar
     }()
+    //MARK: Properties
     
     var viewModel: TVListViewModelProtocol?
     private var tvData = [Result]()
     private var tvList = [Result]()
     private var isSearch =  false
     
+    //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         initDelegate()
         viewModel!.load()
         
     }
-    func initDelegate() {
+    
+    //MARK: Private Func
+    
+    private func initDelegate() {
         viewModel?.delegate = self
         tvListTableView.delegate = self
         tvListTableView.dataSource = self
@@ -38,15 +44,20 @@ class TVListVC: UIViewController {
         configure()
         configureConstraints()
     }
-    func configure() {
+    private func configure() {
         view.addSubview(searchBar)
         view.addSubview(tvListTableView)
         searchBar.placeholder = TVListConstant.TVListUIConstant.placeHolder.rawValue
         searchBar.showsCancelButton = true
         tvListTableView.register(TVListCell.self, forCellReuseIdentifier: TVListCell.Identifier.path.rawValue)
+        let rightButton = UIBarButtonItem(image: UIImage(systemName: "suit.heart.fill"), style: .done, target: self, action: #selector(rightButtonTapped))
+        navigationItem.rightBarButtonItem = rightButton
 
     }
 
+    @objc func rightButtonTapped(){
+        self.show(TvListFavoriteBuilder.make(), sender: nil)
+    }
     
     @objc func didTapBackButton(){
         dismiss(animated: true)
@@ -55,6 +66,8 @@ class TVListVC: UIViewController {
 
 
 }
+//MARK: TVListViewModelDelegate
+
 extension TVListVC: TVListViewModelDelegate {
     func handleOutPut(output: TvListViewModelOutPut) {
         switch output {
@@ -68,6 +81,9 @@ extension TVListVC: TVListViewModelDelegate {
         }
     }
 }
+
+// MARK: UITableViewDelegate, UITableViewDataSource
+
 extension TVListVC: UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = Int()
@@ -105,7 +121,19 @@ extension TVListVC: UITableViewDelegate,UITableViewDataSource {
         let vc = TVListDetailBuilder.make(id: id ?? 0)
         navigationController?.pushViewController(vc, animated: true)
     }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let offsetY = scrollView.contentOffset.y
+        let contentHeight = scrollView.contentSize.height
+        let height = scrollView.frame.size.height
+        if offsetY >= contentHeight-(height * 1.6) {
+            viewModel!.load()
+        }
+    }
 }
+
+//MARK: UISearchBarDelegate
+
 extension TVListVC: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String){
         if searchBar.text != "" {
@@ -126,6 +154,8 @@ extension TVListVC: UISearchBarDelegate {
         }
     }
 }
+//MARK: Constraints
+
 extension TVListVC {
     func configureConstraints(){
         searchBar.snp.makeConstraints { make in

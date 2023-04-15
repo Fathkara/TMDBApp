@@ -34,6 +34,9 @@ class TVListCell: UITableViewCell {
         contentView.addSubview(tvImage)
         tvName.textAlignment = .left
         tvName.font = UIFont.systemFont(ofSize: 15)
+        tvImage.layer.cornerRadius = 5
+        tvImage.layer.masksToBounds = true
+        tvImage.contentMode = .scaleAspectFill
         
         configureConstraints()
     }
@@ -57,7 +60,7 @@ extension TVListCell {
         }
         
         tvImage.snp.makeConstraints { make in
-            make.left.equalTo(tvName.snp.right)
+            make.left.equalTo(tvName.snp.right).offset(-20)
             make.centerY.equalTo(contentView)
             make.width.equalTo(contentView.bounds.width * 0.3)
             make.height.equalTo(contentView.bounds.height * 1.2)

@@ -10,16 +10,16 @@ import CoreData
 import UIKit
 
 protocol CoreDataManagerProtocol {
-    func addMovie(value: TvDetail)
-    func deleteMovie(value: TVShow)
-    func fetchMovie() -> [TVShow]
+    func addTvList(value: TvDetail)
+    func deleteTvList(value: TVShow)
+    func fetchList() -> [TVShow]
 }
 
 class CoreDataManager: CoreDataManagerProtocol {
     let context = appDelegate.persistentContainer.viewContext
     var tvList: [TVShow] = []
     
-    func fetchMovie() -> [TVShow] {
+    func fetchList() -> [TVShow] {
         do{
             tvList = try context.fetch(TVShow.fetchRequest())
         }catch{
@@ -28,9 +28,9 @@ class CoreDataManager: CoreDataManagerProtocol {
         return tvList
     }
     
-    func addMovie(value: TvDetail) {
+    func addTvList(value: TvDetail) {
         
-        let movieFav = self.fetchMovie()
+        let movieFav = self.fetchList()
         var idList: [String] = []
         
         for i in movieFav {
@@ -39,14 +39,14 @@ class CoreDataManager: CoreDataManagerProtocol {
         
         if !(idList.contains(String(value.id ?? 0))) {
             let tvList = TVShow(context: context)
-            tvList.title = value.title
+            tvList.title = value.name
             tvList.image = value.backdropPath
             tvList.id = "\(value.id ?? 0)"
             appDelegate.saveContext()
         }
     }
     
-    func deleteMovie(value: TVShow) {
+    func deleteTvList(value: TVShow) {
         self.context.delete(value)
         appDelegate.saveContext()
     }

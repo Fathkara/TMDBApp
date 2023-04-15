@@ -8,12 +8,12 @@
 import Foundation
 import UIKit
 protocol TvListServiceProtocol {
-    func fetchTvShow(onSuccess: @escaping ([Result])-> Void, onFailure: @escaping (String) -> Void)
+    func fetchTvShow(page:Int,onSuccess: @escaping ([Result])-> Void, onFailure: @escaping (String) -> Void)
 }
 
 class TvListService: TvListServiceProtocol {
-    func fetchTvShow(onSuccess: @escaping ([Result]) -> Void, onFailure: @escaping (String) -> Void) {
-        guard let url = URL(string: NetworkConstant.tvListAPI.tvListAPI()) else {return}
+    func fetchTvShow(page:Int,onSuccess: @escaping ([Result]) -> Void, onFailure: @escaping (String) -> Void) {
+        guard let url = URL(string: NetworkConstant.tvListAPI.tvListAPI(page: page)) else {return}
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
             if let error = error {

@@ -15,8 +15,9 @@ class NetworkConstant {
         case languageUrl = "&language=en-US&page=1"
         
         
-        static func tvListAPI() -> String {
-            return "\(pathUrl.rawValue)\(genreUrl.rawValue)\(apiKey.rawValue)\(languageUrl.rawValue)"
+        static func tvListAPI(page:Int) -> String {
+            let pageUrl = "\(page)"
+            return "\(pathUrl.rawValue)\(genreUrl.rawValue)\(apiKey.rawValue)\(languageUrl.rawValue)\(pageUrl)"
         }
     }
     
