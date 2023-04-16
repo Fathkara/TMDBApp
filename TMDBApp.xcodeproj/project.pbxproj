@@ -218,10 +218,10 @@
 		3DAABD5929EB1893000518C5 /* TVListFavorite */ = {
 			isa = PBXGroup;
 			children = (
+				3DAABD6729EBEFF7000518C5 /* Cell */,
 				3DAABD5729EB188D000518C5 /* TVListFavoriteVC.swift */,
 				3DAABD5A29EB18B3000518C5 /* TVListFavoriteViewModel.swift */,
 				3DAABD5C29EB18C1000518C5 /* TVListFavoriteBuilder.swift */,
-				3DAABD6029EB1928000518C5 /* TvListFavoriteCell.swift */,
 			);
 			path = TVListFavorite;
 			sourceTree = "<group>";
@@ -236,6 +236,14 @@
 				3DAABD6229EB239A000518C5 /* empty-box-orange-theme.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		3DAABD6729EBEFF7000518C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3DAABD6029EB1928000518C5 /* TvListFavoriteCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

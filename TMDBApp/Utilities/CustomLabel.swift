@@ -23,7 +23,7 @@ class CustomLabel: UILabel {
     
     private func setupUI() {
         self.textAlignment = .center
-        self.font = UIFont(name: "Poppins-Medium", size: 15)
+        self.font = UIFont.systemFont(ofSize: 15)
         self.numberOfLines = 0
     }
     

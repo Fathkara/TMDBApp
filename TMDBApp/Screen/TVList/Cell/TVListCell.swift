@@ -13,6 +13,7 @@ class TVListCell: UITableViewCell {
 
     let tvName = CustomLabel()
     let tvImage = UIImageView()
+    let tvAverageRating = CustomLabel()
     
     enum Identifier: String {
         case path = "Cell"
@@ -32,8 +33,10 @@ class TVListCell: UITableViewCell {
     private func configure(){
         contentView.addSubview(tvName)
         contentView.addSubview(tvImage)
+        contentView.addSubview(tvAverageRating)
         tvName.textAlignment = .left
         tvName.font = UIFont.systemFont(ofSize: 15)
+        tvAverageRating.textAlignment = .left
         tvImage.layer.cornerRadius = 5
         tvImage.layer.masksToBounds = true
         tvImage.contentMode = .scaleAspectFill
@@ -43,6 +46,7 @@ class TVListCell: UITableViewCell {
     
     func saveModel(value: Result){
         tvName.text = value.name
+        tvAverageRating.text = "\(value.voteAverage!)"
         let imageUrl = "https://image.tmdb.org/t/p/w500"
         if let url = URL(string: "\(imageUrl)"+"\(value.posterPath ?? "")") {
             tvImage.af.setImage(withURL: url)
@@ -54,7 +58,13 @@ extension TVListCell {
     func configureConstraints(){
         tvName.snp.makeConstraints { make in
             make.left.equalToSuperview().offset(8)
-            make.centerY.equalTo(contentView)
+            make.top.equalToSuperview().offset(8)
+            make.width.equalTo(contentView.bounds.width * 0.9)
+            make.height.equalTo(contentView.bounds.height * 0.6)
+        }
+        tvAverageRating.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(8)
+            make.top.equalToSuperview().offset(32)
             make.width.equalTo(contentView.bounds.width * 0.9)
             make.height.equalTo(contentView.bounds.height * 0.6)
         }

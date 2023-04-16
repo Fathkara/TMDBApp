@@ -97,9 +97,10 @@ class TVListDetailVC: UIViewController {
         }
     }
     
-    @objc func didTapFavButton(){
+    @objc func didTapFavButton(sender:UIButton){
         if let tvListDetail = favTvShow {
             viewModel?.addCoreData(data: tvListDetail)
+            
         }
         animationView.play()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) { [self] in
